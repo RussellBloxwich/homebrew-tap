@@ -5,21 +5,21 @@
 class Greenkeeper < Formula
   desc "Background daemon that dispatches AI agents to fix your GitHub PRs"
   homepage "https://github.com/RussellBloxwich/greenkeeper"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/RussellBloxwich/greenkeeper/releases/download/v0.2.0/greenkeeper_darwin_amd64.tar.gz"
-      sha256 "c5fad550a0ad1d864489373ddb041a6658b509af9f8566d90d2bf1f707dd45ec"
+      url "https://github.com/RussellBloxwich/greenkeeper/releases/download/v0.2.1/greenkeeper_darwin_amd64.tar.gz"
+      sha256 "bf0cf98c4b82d24274a66b521e3b7df642f4aba312e65731b476fea14bb0a202"
 
       define_method(:install) do
         bin.install "greenkeeper"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/RussellBloxwich/greenkeeper/releases/download/v0.2.0/greenkeeper_darwin_arm64.tar.gz"
-      sha256 "b49c7eee1c30fe1d7b84ac268849f3e8777d0505d08655128d2c03c0e3e5f679"
+      url "https://github.com/RussellBloxwich/greenkeeper/releases/download/v0.2.1/greenkeeper_darwin_arm64.tar.gz"
+      sha256 "837b35724d3b4d6c1bf8973346b5db8a944b361a9d763f510f6ce7a0273bb9fa"
 
       define_method(:install) do
         bin.install "greenkeeper"
@@ -29,15 +29,15 @@ class Greenkeeper < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RussellBloxwich/greenkeeper/releases/download/v0.2.0/greenkeeper_linux_amd64.tar.gz"
-      sha256 "2f935ad689d9796ddffef65bd1f2c576f4d94e066e9d352576cb17cce8cadd28"
+      url "https://github.com/RussellBloxwich/greenkeeper/releases/download/v0.2.1/greenkeeper_linux_amd64.tar.gz"
+      sha256 "f18f1718b823c7a765dd0fae5dbb0b20770e4835c60f9d7e9308c202bb0f0f55"
       define_method(:install) do
         bin.install "greenkeeper"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RussellBloxwich/greenkeeper/releases/download/v0.2.0/greenkeeper_linux_arm64.tar.gz"
-      sha256 "a80f7a68985f413543760a17bca04b40296e3f8529f553ee12996a5ab71a3e63"
+      url "https://github.com/RussellBloxwich/greenkeeper/releases/download/v0.2.1/greenkeeper_linux_arm64.tar.gz"
+      sha256 "1d8aaba64becea22b126da31d9bbcf53e7b2549557a7f3bc049d63a7ecf35369"
       define_method(:install) do
         bin.install "greenkeeper"
       end
